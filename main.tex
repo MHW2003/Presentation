@@ -2,17 +2,21 @@
 \providecommand{\tightlist}{
 \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \usetheme{Madrid}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
 \title{Title}
 \author{Author}
 \date{\today}
 \begin{document}
 \maketitle
+\begin{frame}{Contents}
 
+\tableofcontents
+\end{frame}
 \begin{frame}{List}
 
 {
 \begin{itemize}
-\tightlist
 \item
   Focus on contents, save time in formatting
 \item
@@ -25,25 +29,28 @@
 }
 
 \end{frame}
-
 \begin{frame}{Block}
+
 \begin{block}{Blue}
+
 {
 Blue box
 }
-\end{block}
 
+\end{block}
 \begin{alertblock}{Red}
+
 {
 Red box
 }
-\end{alertblock}
 
+\end{alertblock}
 \begin{exampleblock}{Green}
+
 {
 Green box
 }
+
 \end{exampleblock}
 \end{frame}
-
 \end{document}
