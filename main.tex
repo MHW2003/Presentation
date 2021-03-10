@@ -1,36 +1,29 @@
 \documentclass{beamer}
 \providecommand{\tightlist}{
 \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{multirow}
 \usetheme{Madrid}
-\usepackage{graphicx}
-\graphicspath{ {./images/} }
 \title{Title}
 \author{Author}
 \date{\today}
 \begin{document}
 \maketitle
 \begin{frame}{List}
-
+\begin{table}
+\caption{top}
+\begin{tabular}{|l|l|l|l|}\hline
+\multirow{2}{*}{1}&\multirow{2}{*}{2}&\multicolumn{2}{l|}{3}\\\cline{3-4}
+&&4&5\\\hline
+\end{tabular}
+\end{table}
+\begin{table}
+\begin{tabular}{|l|l|l|l|}\hline
+\multicolumn{2}{|l|}{\multirow{2}{*}{a}}& & \\\cline{3-3}\cline{4-4} 
+\multicolumn{2}{|l|}{ }&\multicolumn{2}{|l|}{d}\\\hline
+ & &\multirow{2}{*}{c}& \\\cline{1-2}\cline{4-4} 
+\multicolumn{2}{|l|}{b}& & \\\hline
+\end{tabular}
+\caption{bottom}
+\end{table}
 \end{frame}
-\begin{figure}[h]
-  
-
-
-
-
-
-
-\raggedright
-
-
-
-\includegraphics[width=0.5\textwidth]{4224f545-192c-43e1-849e-076b035089aa.jpg}
-  
-
-
-
-
-
-
-\end{figure}
 \end{document}
